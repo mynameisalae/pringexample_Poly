@@ -4,6 +4,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor 
+@NoArgsConstructor 
 
 
 /**
@@ -31,45 +40,5 @@ public class FictionalCharacter {
     private String lastname;
     private String univers ;
 
-    public FictionalCharacter() {
-    }
-
-    public FictionalCharacter(Long id, String firstname, String lastname) {
-        this(id, firstname, lastname, null);
-    }
-
-    public FictionalCharacter(Long id, String firstname, String lastname, String univers) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.univers = univers;
-    }
-
-    public Long getId() {
-        return id;
-    }
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public String getUnivers() {
-        return univers;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public void setUnivers(String univers) {
-        this.univers = univers;
-    }
 
 }
