@@ -19,9 +19,9 @@ public class SpringExampleApplication {
     @Bean
     CommandLineRunner dataLoader(CharacterRepo repository) {
         return args -> {
-            repository.save(new FictionalCharacter(null, "Bilbo", "Baggins"));
-            repository.save(new FictionalCharacter(null, "Hermione", "Granger"));
-            repository.save(new FictionalCharacter(null, "Leia", "Organa"));
+            repository.save(new FictionalCharacter(null, "Bilbo", "Baggins", "Middle-earth"));
+            repository.save(new FictionalCharacter(null, "Hermione", "Granger", "Hogwarts"));
+            repository.save(new FictionalCharacter(null, "Leia", "Organa", "Star Wars"));
         };
     }
 }

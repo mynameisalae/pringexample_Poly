@@ -34,6 +34,10 @@ public class FictionalCharacter {
     public FictionalCharacter() {
     }
 
+    public FictionalCharacter(Long id, String firstname, String lastname) {
+        this(id, firstname, lastname, null);
+    }
+
     public FictionalCharacter(Long id, String firstname, String lastname, String univers) {
         this.id = id;
         this.firstname = firstname;
