@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personnages</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-Ma super page pour présenter mon API. La doc techniques est <a href="/docs">là</a>.
+    <h1>Personnages</h1>
+    <p><a href="/add-character.html">Ajouter un ou plusieurs personnages</a></p>
+    <p id="status">Chargement des personnages...</p>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Univers</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="charactersTable"></tbody>
+        </table>
+    </div>
+
+    <script src="/index.js"></script>
 </body>
 </html>

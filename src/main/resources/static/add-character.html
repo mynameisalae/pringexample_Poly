@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ajouter des personnages</title>
+    <link rel="stylesheet" href="/add-character.css">
+</head>
+<body>
+    <h1>Ajouter des personnages</h1>
+    <a href="/">Retour à la liste</a>
+
+    <form id="singleForm">
+        <h2>Ajouter un personnage</h2>
+
+        <label>
+            Prenom
+            <input name="firstname" required>
+        </label>
+
+        <label>
+            Nom
+            <input name="lastname" required>
+        </label>
+
+        <label>
+            Univers
+            <input name="univers" required>
+        </label>
+
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <form id="multipleForm">
+        <h2>Ajouter plusieurs personnages</h2>
+        <div id="characters"></div>
+        <button type="button" id="addRow">Ajouter une ligne</button>
+        <button type="submit">Ajouter les personnages</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script src="/add-character.js"></script>
+</body>
+</html>
