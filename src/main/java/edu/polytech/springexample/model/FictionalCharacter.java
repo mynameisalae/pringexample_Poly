@@ -29,14 +29,16 @@ public class FictionalCharacter {
 
     private String firstname;
     private String lastname;
+    private String univers ;
 
     public FictionalCharacter() {
     }
 
-    public FictionalCharacter(Long id, String firstname, String lastname) {
+    public FictionalCharacter(Long id, String firstname, String lastname, String univers) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
+        this.univers = univers;
     }
 
     public Long getId() {
@@ -54,8 +56,16 @@ public class FictionalCharacter {
         return lastname;
     }
 
+    public String getUnivers() {
+        return univers;
+    }
+
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    public void setUnivers(String univers) {
+        this.univers = univers;
     }
 
 }

@@ -45,6 +45,7 @@ public class CharacterService {
         assert existingFictionalCharacter != null;
         existingFictionalCharacter.setFirstname(character.getFirstname());
         existingFictionalCharacter.setLastname(character.getLastname());
+        existingFictionalCharacter.setUnivers(character.getUnivers());
         return repository.save(existingFictionalCharacter);
     }
     
